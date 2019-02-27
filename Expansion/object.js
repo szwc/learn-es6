@@ -83,3 +83,14 @@ Object.keys()：返回对象自身的所有可枚举的属性的键名。
 JSON.stringify()：只串行化对象自身的可枚举的属性。
 Object.assign()： 忽略enumerable为false的属性，只拷贝对象自身的可枚举的属性。
  */
+
+ // 4.super 关键字
+ /**
+  * 关键字super，指向当前对象的原型对象。
+  */
+
+// 5.对象的扩展运算符
+// 对象的扩展运算符（...）用于取出参数对象的所有可遍历属性，拷贝到当前对象之中
+let extendObj = {a:'aa',b:'bb',c:'cc'}
+let otherObj = {...extendObj}
+console.log(otherObj,'other')
